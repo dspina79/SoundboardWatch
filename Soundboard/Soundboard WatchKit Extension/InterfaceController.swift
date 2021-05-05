@@ -23,4 +23,17 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
     }
 
+   
+    @IBAction func playSound1() {
+    }
+    
+    @IBAction func playSound2() {
+    }
+    
+    @IBAction func playound3() {
+    }
+    
+    
+    @IBAction func playSound4() {
+    }
 }
