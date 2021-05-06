@@ -7,10 +7,11 @@
 
 import WatchKit
 import Foundation
+import AVFoundation
 
 
-class InterfaceController: WKInterfaceController {
-
+class InterfaceController: WKInterfaceController, SoundPlaying {
+    var audioPlayer: AVAudioPlayer?
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
     }
@@ -32,7 +33,6 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func playound3() {
     }
-    
     
     @IBAction func playSound4() {
     }

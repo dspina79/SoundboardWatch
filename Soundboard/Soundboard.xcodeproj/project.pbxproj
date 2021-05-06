@@ -21,6 +21,7 @@
 		5527E04526421EEA00F8D7A3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527E04426421EEA00F8D7A3 /* ExtensionDelegate.swift */; };
 		5527E04726421EEA00F8D7A3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527E04626421EEA00F8D7A3 /* ComplicationController.swift */; };
 		5527E04926421EEB00F8D7A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5527E04826421EEB00F8D7A3 /* Assets.xcassets */; };
+		5527E05C26437E3D00F8D7A3 /* SoundPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527E05B26437E3D00F8D7A3 /* SoundPlaying.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		5527E04626421EEA00F8D7A3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		5527E04826421EEB00F8D7A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5527E04A26421EEB00F8D7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5527E05B26437E3D00F8D7A3 /* SoundPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlaying.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				5527E04226421EEA00F8D7A3 /* InterfaceController.swift */,
+				5527E05B26437E3D00F8D7A3 /* SoundPlaying.swift */,
 				5527E04426421EEA00F8D7A3 /* ExtensionDelegate.swift */,
 				5527E04626421EEA00F8D7A3 /* ComplicationController.swift */,
 				5527E04826421EEB00F8D7A3 /* Assets.xcassets */,
@@ -303,6 +306,7 @@
 			files = (
 				5527E04526421EEA00F8D7A3 /* ExtensionDelegate.swift in Sources */,
 				5527E04326421EEA00F8D7A3 /* InterfaceController.swift in Sources */,
+				5527E05C26437E3D00F8D7A3 /* SoundPlaying.swift in Sources */,
 				5527E04726421EEA00F8D7A3 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
