@@ -26,12 +26,15 @@ class InterfaceController: WKInterfaceController, SoundPlaying {
 
    
     @IBAction func playSound1() {
+        playSound(named: "Audio/bell")
     }
     
     @IBAction func playSound2() {
+        playSound(named: "Audio/dino")
     }
     
     @IBAction func playound3() {
+        playSound(named: "Audio/meow")
     }
     
     @IBAction func playSound4() {
