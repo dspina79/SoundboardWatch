@@ -38,5 +38,6 @@ class InterfaceController: WKInterfaceController, SoundPlaying {
     }
     
     @IBAction func playSound4() {
+        playSound(named: "Audio/slime")
     }
 }
