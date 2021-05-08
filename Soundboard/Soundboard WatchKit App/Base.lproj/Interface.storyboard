@@ -44,9 +44,39 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <segue destination="ik8-yH-55l" kind="relationship" relationship="nextPage" id="shK-He-3iJ"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-110" y="32"/>
+            <point key="canvasLocation" x="-464" y="-18"/>
+        </scene>
+        <!--Table Interface Controller-->
+        <scene sceneID="9PA-LJ-XUx">
+            <objects>
+                <controller id="ik8-yH-55l" customClass="TableInterfaceController" customModule="Soundboard_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="onH-7r-Dxt" userLabel="Table" customClass="Sound">
+                            <items>
+                                <tableRow identifier="Row" id="s1G-jc-Ae5" customClass="SoundRow" customModule="Soundboard_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="A9i-bJ-mmB">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" baselineAdjustment="alignCenters" id="TyZ-r4-993"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="TyZ-r4-993" id="zhH-su-rOo"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="onH-7r-Dxt" id="ggl-b1-0Dn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-243" y="-18"/>
         </scene>
     </scenes>
 </document>
