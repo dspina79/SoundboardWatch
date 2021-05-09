@@ -13,7 +13,7 @@ protocol SoundPlaying: AnyObject {
 
 extension SoundPlaying {
     func playSound(named name: String) {
-        guard let url = Bundle.main.url(forResource: name, withExtension: "mp3") else {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "mp3", subdirectory: "Audio") else {
             fatalError("Cannot find file named \(name).mp3")
         }
         

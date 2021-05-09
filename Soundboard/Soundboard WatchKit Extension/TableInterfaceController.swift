@@ -7,16 +7,28 @@
 
 import WatchKit
 import Foundation
+import AVFoundation
 
 
-class TableInterfaceController: WKInterfaceController {
+class TableInterfaceController: WKInterfaceController, SoundPlaying {
     @IBOutlet weak var table: WKInterfaceTable!
+    var audioPlayer: AVAudioPlayer?
+    
+    let sounds = Bundle.main.urls(forResourcesWithExtension: "mp3", subdirectory: "Audio")?.map {
+        $0.deletingPathExtension().lastPathComponent
+    }.sorted() ?? []
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        table.setNumberOfRows(20, withRowType: "Row")
+        table.setNumberOfRows(sounds.count, withRowType: "Row")
+        for (index, sound) in sounds.enumerated() {
+            guard let row = table.rowController(at: index) as? SoundRow else {
+                continue
+            }
+            row.textLabel.setText(sound)
+        }
     }
 
     override func willActivate() {
@@ -29,4 +41,7 @@ class TableInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        playSound(named: sounds[rowIndex])
+    }
 }
